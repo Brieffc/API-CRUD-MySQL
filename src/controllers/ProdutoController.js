@@ -50,7 +50,7 @@ module.exports = {
       const prod = await ModelProduto.findByPk(req.body.Codigo);
       await prod.destroy();
 
-      res.status(200).json(prod);
+      res.status(200).json({ mensagem: "Produto excluído com sucesso!" });
     } catch (error) {
       res.status(500).json({ error: error });
     }

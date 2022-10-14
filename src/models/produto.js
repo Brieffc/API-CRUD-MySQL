@@ -7,7 +7,7 @@ const Produto = database.define("Produto", {
     allowNull: false,
   },
   preco: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.DECIMAL,
     required: true,
   },
 });
