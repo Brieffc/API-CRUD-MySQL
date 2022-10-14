@@ -3,10 +3,10 @@ const controllerProduto = require("../controllers/ProdutoController");
 
 const routes = express.Router();
 
-routes.post("/Create", controllerProduto.Create);
-routes.get("/List", controllerProduto.List);
-routes.put("/Update", controllerProduto.Update);
-routes.get("/GetOne", controllerProduto.GetOne);
-routes.delete("/Delete", controllerProduto.Delete);
+routes.post("/create", controllerProduto.create);
+routes.get("/list", controllerProduto.list);
+routes.put("/update", controllerProduto.update);
+routes.get("/getId", controllerProduto.getId);
+routes.delete("/delete", controllerProduto.delete);
 
 module.exports = routes;
